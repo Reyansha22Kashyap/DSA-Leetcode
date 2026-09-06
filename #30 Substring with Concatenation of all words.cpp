@@ -9,7 +9,9 @@ public:
          int wordCount=words.size();
          int totalLen=wordLen * wordCount;
          
-
+           if(n<totalLen)
+                return res;
+                
          unordered_map<string,int>need;
          for(string word: words){
             need[word]++;
